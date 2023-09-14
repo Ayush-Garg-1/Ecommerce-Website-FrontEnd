@@ -1,0 +1,33 @@
+.bottem-menu-section{
+    width: 100%;
+    height: 10vh;
+    display: none;
+    background-color: white;
+    border-bottom: 2px solid gray;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+}
+.same-property{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.same-property i{
+    color: rgb(183, 0, 255);
+    font-size: 16px;
+}
+.same-property p{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+@media(width <= 480px){
+    .bottem-menu-section{
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+}

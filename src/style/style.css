@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+}
+.loading-section{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load-box{
+    width:50px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 41%;
+    border: 15px solid orange;
+    animation: load 2s linear infinite;
+    transition: all 3s ease;
+}
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.loader{
+    width: 90%;
+    height: 90%;
+    border-radius:11px;
+    background-color: rgb(233, 166, 242);
+    animation: loader 2s linear infinite;
+    transition: all 0.5s ease;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        background-color:rgb(160, 254, 235);
+    }
+    
+}
+@import "./nav.css";
+@import "./mainSection.css";
+@import "./contact.css";
+@import "./footer.css";
+@import "./errorpage.css";
+@import "./featureProduct.css";
+@import "./product.css";
+@import "./trusted.css";
+@import "./servises.css";
+@import "./singleProduct.css";
+@import "./productPage.css";
+@import "./Listview.css";
+@import "./cart.css";
+@import "./login.css";
+@import "./bottomMenu.css";

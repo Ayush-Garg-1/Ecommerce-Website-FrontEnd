@@ -1,0 +1,241 @@
+.ProductsPage-section{
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: 51px auto;
+}
+.filter-section{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 21px;
+}
+.filter-section form input{
+    width: 100%;
+    padding: 15px 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+}
+.filter-section form ::placeholder{
+    font-size: 14px;
+    color: rgb(210, 207, 207);
+}
+.filter-section .category-filter{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+.filter-section  h2{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 21px;
+}
+.category-filter button{
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-align: left;
+    background-color: transparent;
+}
+.product-price-range{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+.product-price-range input{
+    width: 150px;
+}
+.clear-filter-btn{
+    margin-top: 21px;
+    padding: 15px 25px;
+    font-size: 19px;
+    border: none;
+    border-radius: 6px;
+    background-color: orangered;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}.clear-filter-btn:hover{
+    background-color: red;
+}
+.top-filter-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 21px;
+}
+.top-filter-box .dropdown{
+    padding: 11px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.top-filter-box .dropdown option{
+    cursor: pointer;
+}
+.grid-list-view-btns{
+    display: flex;
+    gap: 30px;
+}
+.grid-list-view-btns button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 7px 11px;
+    border-radius: 11px;
+    color: white;
+    background-color: black;
+}
+.grid-list-view-btns button:hover{
+    background-color: rgb(199, 147, 244);
+}
+.top-filter-box p{
+    text-transform:uppercase;
+    word-spacing: 3px;
+}
+.filter-product-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+    gap: 21px;
+}
+.products-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 41px;
+    padding: 11px;
+}
+@media(width <= 1250px){
+    .product { 
+        width: 44%;
+    } 
+}
+@media(width <= 1000px){    
+.ProductsPage-section {
+    flex-direction: column;
+}
+.filter-section {
+    width: 100%;
+    height: auto;
+      flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 11px auto;
+}
+.filter-section form input{
+    width: 100%;
+    padding: 25px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.filter-section form ::placeholder{
+    font-size: 18px;
+}
+.filter-section .category-filter {
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.product-price-range {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 45px;
+}
+.filter-product-section {
+margin-top: 21px;  
+  width: 100%;
+}
+.category-filter button {
+    font-size: 17px;
+}
+.top-filter-box {
+justify-content: space-between;
+    padding: 11px 0px;
+}
+.products-box {
+    gap: 25px;
+    padding: 11px 0px;
+}
+.clear-filter-btn {
+    padding: 15px 47px;
+}
+.grid-list-view-btns {
+    display: flex;
+    gap: 7px;
+}
+.category {
+    width: 66%;
+    font-size: 11px;
+}
+}
+@media(width <= 520px){   
+    .filter-section {
+        align-items: center;
+    }
+    form {
+        width: 90%;
+        margin: 1px auto;
+    }
+    .filter-section form input {
+            padding: 17px 21px;
+    font-size:18px
+    }
+    .filter-section .category-filter {
+        gap: 19px;
+        flex-wrap: unset;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+    }
+    .product-price-range {
+        flex-wrap: wrap;
+        margin: 1px auto;
+    }
+    .filter-product-section {
+        flex-direction: column-reverse;
+    }
+    .top-filter-box {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .grid-list-view-btns {
+        width: 85%;
+      display:flex;
+      justify-content: space-between;
+    }
+    .product {
+        width: 100%;
+    }
+    .category {
+        width: 55%;
+        font-size: 14px;
+    }
+}
